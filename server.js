@@ -17,6 +17,14 @@ app.use(express.static('public'));
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("Database Connected ✅"))
     .catch(err => console.log("DB Connection Error ❌:", err));
+    const path = require('path');
+
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 
 app.use('/api/auth', authRoutes);

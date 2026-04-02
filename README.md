@@ -17,7 +17,7 @@ A modern, secure, and responsive user authentication system with a custom dashbo
 
 ## 🚀 Live Demo
 You can check out the live version of the project here: 
-[**Link to your Vercel URL**]((https://user-auth-system-xuu1.vercel.app/))
+(https://user-auth-system-xuu1.vercel.app/)
 
 ## ⚙️ Local Installation
 If you want to run this project locally:
